@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-info text-white text-center py-4">
+        <h1>Daily News</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" onclick="fetchNews('business')">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" onclick="fetchNews('technology')">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#" onclick="fetchNews('sports')">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="login.html">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <h2 class="text-center mb-4">Latest News</h2>
+        <div id="articles" class="row"></div>
+    </main>
+        <main class="container mt-4">
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h3>Weather Information</h3>
+                    <div id="weather" class="p-3 border">Loading...</div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Stock Market</h3>
+                    <div id="stocks" class="p-3 border">Loading...</div>
+                </div>
+            </div>
+        </main>    
+    <footer class="text-center py-4">
+        <p>&copy; Tech Squad News</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
